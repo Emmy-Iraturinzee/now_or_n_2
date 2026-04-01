@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Now or Never LTD</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="digital transformation, IT consulting, e-government, digital health, e-agriculture, digital trade, management consulting, Rwanda, Africa">
+    <meta name="description" content="Now or Never LTD - Leading IT and management consulting firm driving digital transformation across Digital Governance, E-Agriculture, Digital Health, and Digital Trade sectors in Africa.">
+    <meta name="author" content="Now or Never LTD">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Now or Never LTD - Digital Transformation & IT Consulting">
+    <meta property="og:description" content="Empowering Africa's digital future through innovative technology, expert consulting, and sustainable impact.">
+    <meta property="og:url" content="https://www.nonltd.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.nonltd.com/img/logo_non-removebg-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Now or Never LTD - Digital Transformation & IT Consulting">
+    <meta name="twitter:description" content="Leading IT consulting firm specializing in digital governance, e-agriculture, digital health, and digital trade solutions.">
+    <meta name="twitter:image" content="https://www.nonltd.com/img/logo_non-removebg-preview.png">
+    <link rel="canonical" href="https://www.nonltd.com">
+
+    <!-- Favicon -->
+    <link href="img/logo_non-removebg-preview.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Sora:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex flex-column align-items-center justify-content-center" style="z-index:9999;">
+        <div class="spinner-border" style="width: 3rem; height: 3rem; border-color: #74a404 #1128B3 #74a404 #1128B3;" role="status"></div>
+       
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('spinner').classList.remove('show');
+            }, 900);
+        });
+    </script>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-dark p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, Kigali, Rwanda</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+250 7888 64 02</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+   
+    <!-- Modern Navbar CSS -->
+    <style>
+        .modern-navbar {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .modern-navbar.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            padding: 0.75rem 0;
+        }
+
+        .navbar-brand-modern {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand-modern:hover {
+            transform: scale(1.02);
+        }
+
+        .navbar-brand-modern img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-menu-modern {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item-modern {
+            position: relative;
+        }
+
+        .nav-link-modern {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link-modern::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #74a404, #1128B3);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link-modern:hover::after,
+        .nav-link-modern.active::after {
+            width: 100%;
+        }
+
+        .nav-link-modern:hover {
+            color: #74a404;
+        }
+
+        .nav-link-modern.active {
+            color: #74a404;
+        }
+
+        .search-icon-modern {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: none;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .search-icon-modern:hover {
+            background: rgba(116, 164, 4, 0.1);
+            color: #74a404;
+        }
+
+        .cta-btn-modern {
+            background: linear-gradient(135deg, #74a404 0%, #1128B3 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(116, 164, 4, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+
+        .hamburger-modern {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .hamburger-modern span {
+            width: 24px;
+            height: 2.5px;
+            background: #333;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-modern.active span:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .hamburger-modern.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-modern.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu-modern {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: white;
+                border-top: 1px solid #e9ecef;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                padding: 0;
+            }
+
+            .nav-menu-modern.active {
+                max-height: 400px;
+                padding: 1rem 0;
+            }
+
+            .nav-item-modern {
+                width: 100%;
+                padding: 0;
+            }
+
+            .nav-link-modern {
+                display: block;
+                padding: 1rem;
+                border-left: 3px solid transparent;
+                transition: all 0.3s ease;
+            }
+
+            .nav-link-modern::after {
+                display: none;
+            }
+
+            .nav-link-modern:hover,
+            .nav-link-modern.active {
+                background: rgba(116, 164, 4, 0.08);
+                border-left-color: #74a404;
+                padding-left: 2rem;
+            }
+
+            .hamburger-modern {
+                display: flex;
+            }
+
+            .cta-btn-modern {
+                width: 100%;
+                justify-content: center;
+                margin: 1rem;
+            }
+
+            .nav-menu-modern .nav-item-modern:last-child {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+
+    <!-- Modern Navbar HTML -->
+    <nav class="modern-navbar" id="modernNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="navbar-brand-modern">
+                    <img src="img/logo_non-removebg-preview.png" alt="Now or Never LTD Logo">
+                </a>
+
+                <button class="hamburger-modern" id="hamburgerBtn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu-modern" id="navMenu">
+                    <li class="nav-item-modern">
+                        <a href="index.html" class="nav-link-modern active">Home</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="about.html" class="nav-link-modern">About</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="service.html" class="nav-link-modern">Services</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="#products" class="nav-link-modern">Products</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="blog.html" class="nav-link-modern">Blog</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <button class="search-icon-modern" id="searchBtnModern" aria-label="Search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <a href="contact.html" class="cta-btn-modern d-none d-lg-inline-flex">
+                    CONTACT US <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Navbar JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburgerBtn');
+            const navMenu = document.getElementById('navMenu');
+            const navLinks = document.querySelectorAll('.nav-link-modern');
+            const modernNav = document.getElementById('modernNav');
+            const searchBtnModern = document.getElementById('searchBtnModern');
+
+            // Toggle menu
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu on link click
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 10) {
+                    modernNav.classList.add('scrolled');
+                } else {
+                    modernNav.classList.remove('scrolled');
+                }
+            });
+
+            // Search functionality (reuse existing search if available)
+            searchBtnModern.addEventListener('click', function() {
+                if (window._navSearchOpen) {
+                    window._navSearchOpen();
+                }
+            });
+        });
+    </script>
+
+    <!-- Progress Bar Start -->
+  
+    <div id="scrollProgressBar"></div>
+    <script>
+   
+    </script>
+    <!-- Progress Bar End -->
+    <!-- Navbar End -->
+    <!-- Login Link in Navbar -->
+ 
+
+    <!-- Login Popup Modal -->
+    <!-- <div id="loginModal" class="modal" tabindex="-1" style="display:none; background:rgba(0,0,0,0.6); position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:1050;">
+        <div class="modal-dialog modal-dialog-centered" style="max-width:400px; margin:auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to Now or Never LTD</h5>
+                    <button type="button" class="btn-close" id="closeLoginModal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form autocomplete="off">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+                    </form>
+                    <div class="text-center mb-2">or</div>
+                    <a href="#" id="googleLoginBtn" class="btn btn-outline-danger w-100 mb-2">
+                        <i class="fab fa-google me-2"></i>Login with Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+       
+
+        <div class="owl-carousel header-carousel position-relative">
+
+                <div class="owl-carousel-item position-relative" data-dot="<img src='img/g-2.png'>">
+                        <picture>
+                                <source media="(max-width: 767px)" srcset="img/prop2.png ">
+                                <img class="img-fluid w-100" src="https://media.licdn.com/dms/image/v2/D4D12AQEq9qrzL5HURw/article-cover_image-shrink_720_1280/B4DZZoptKvGgAI-/0/1745512508373?e=2147483647&v=beta&t=EH08xJxqGbF6AH-GqG0eQYrWyKAdz5BdAQgY6UzAcFA" alt="E-agriculture" style="object-fit:cover; height: 100vh;">
+                        </picture>
+
+                        <!-- Particle Background -->
+                        <div id="particles-js" style="position:absolute;top:0;left:0;width:100%;height:40%;z-index:9;"></div>
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-hero" style="background: linear-gradient(180deg, #050E42 20%, rgba(4,12,61,0.38) 100%); z-index:1;"></div>
+
+                        <div class="owl-carousel-inner position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="z-index:2;">
+                                <div class="container">
+                                        <div class="row align-items-center">
+                                                <!-- Heading on the left (full width on small screens) -->
+                                                <div class="col-md-8 col-12">
+                                                        <h1 class="display-3 mb-3 text-white animated slideInLeft" id="autoTypeHeading">
+                                                                Digital Governance
+                                                        </h1>
+                                                        <p class="text-white mb-5" style="font-weight: lighter;">
+                                                                Leveraging digital technologies and innovations particularly (internet) to deliver government services,
+                                                                 improve the efficiency by enhancing service delivery and citizen engagement
+                                                                 (enhancing citizen skills) to acquire online services such as (e-services) and access to public records.
+                                                        </p>
+                                                       <a href="government.html" class="btn btn-primary py-3 px-5 mt-4 animated slideInLeft" style="position: relative; z-index: 10;">
+                                                                Read More
+                                                        </a>
+
+                                                        <div class="row mt-5 flex-wrap flex-md-nowrap ms-1">
+                                                                <div class="col-4 col-md-3 pe-4 ">
+                                                                        <div class="py-2">
+                                                                                <h3 class="count-up" data-target="60" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                <div style="color:#b3c7e6; font-size:0.95rem;">Projects Delivered</div>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="col-4 col-md-3 px-4">
+                                                                        <div class="py-2">
+                                                                                <h3 class="count-up" data-target="30" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                <div style="color:#b3c7e6; font-size:0.95rem;">Clients Served</div>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="col-4 col-md-3 px-4">
+                                                                        <div class="py-2">
+                                                                                <h3 class="count-up" data-target="15" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                <div style="color:#b3c7e6; font-size:0.95rem;">African Countries</div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <!-- Decorative image on the right (hidden on small screens) -->
+                                                <div class="col-md-2 d-none d-md-block text-center">
+                                                        <img class="img-fluid wow slideInRight woman-img-hero" src="img/woman.png" alt="E-agriculture" style="width: 1000px !important; position: absolute; margin-left: -300px !important;margin-top: -365px; z-index: 1;">
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="owl-carousel-item position-relative" data-dot="<img src='img/trade-icon.png'>">
+                        <picture>
+                                <source  media="(max-width: 767px)" srcset="img/agricul-mob.png ">
+                                <img class="img-fluid w-100" src="img/e-agri.jpeg" alt="E-agriculture" style="object-fit:cover; height: 100vh;">
+                        </picture>
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay-hero" style="background: linear-gradient(180deg, #050E42 20%, rgba(4,12,61,0.38) 100%); z-index:1;"></div>
+
+                        <div class="owl-carousel-inner position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="z-index:2;">
+                                <div class="container">
+                                        <div class="row align-items-center">
+                                                <div class="col-md-8 col-12">
+                                                        <h1 class="display-3 mb-3 text-white animated slideInLeft" id="autoTypeHeading">
+                                                                E-Agriculture
+                                                        </h1>
+                                                        <p class="text-white mb-5" style="font-weight: lighter;">
+                                                              We integrate (ICT) in agriculture and rural development improve agricultural productivity, enhance food security,
+                                                               and promote sustainable practices through digital solutions, information exchange, sharing of ideas on adoption and use of digital innovations in agriculture.
+NON helps citizens and farmers to; 
+Access to agricultural information, Digital Marketplaces,
+ Remote Learning and agricultural data analytics make informed decisions regarding 
+ crop management, pest control, and resource allocation
+
+                                                        </p>
+                                                        <a href="agriculture.html" class="btn btn-primary py-3 px-5 mt-4 animated slideInLeft">
+                                                                Read More
+                                                        </a>
+
+                                                        <div class="row mt-5 flex-wrap flex-md-nowrap ms-1">
+                                                                <div class="col-4 col-md-3 pe-4 stat-card">
+                                                                        <div class="py-2">
+                                                                                <h3 class="count-up" data-target="60" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                <div style="color:#b3c7e6; font-size:0.95rem;">Projects Delivered</div>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="col-4 col-md-3 px-4 stat-card">
+                                                                        <div class="py-2">
+                                                                                <h3 class="count-up" data-target="30" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                <div style="color:#b3c7e6; font-size:0.95rem;">Clients Served</div>
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="col-4 col-md-3 px-4 stat-card">
+                                                                        <div class="py-2">
+                                                                                <h3 class="count-up" data-target="15" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                <div style="color:#b3c7e6; font-size:0.95rem;">African Countries</div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-2 d-none d-md-block text-center"></div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg'>">
+                        <picture>
+                                <source media="(max-width: 767px)" srcset="img/prop2.png ">
+                                <video class="img-fluid w-100" src="img/trade.mp4" autoplay loop muted playsinline style="object-fit:cover; height: 100vh;">
+                                        Your browser does not support the video tag.
+                                </video>
+                        </picture>
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(180deg, #050E42 0%, rgba(4,12,61,0.38) 100%); z-index:1;">
+                                <div class="owl-carousel-inner owl-carousel-inner-vid position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="z-index:2;">
+                                        <div class="container">
+                                                <div class="row align-items-center">
+                                                        <div class="col-md-8 col-12">
+                                                                <h1 class="display-3 mb-3 text-white animated slideInLeft" id="autoTypeHeading">
+                                                                        Digital trade
+                                                                </h1>
+                                                                <p class="text-white mb-5" style="font-weight: lighter;">
+                                                                     Digital trade (E-commerce, E-customs, Clearing and Forwarding):
+                                                                      We builds platforms that enable trade digitally (e.g. online customs 
+                                                                      systems, e-commerce portals, trade facilitation tools) to facilitate the 
+                                                                      exchange of goods, services, and data across borders through digital channels,
+                                                                       leveraging online platforms, cloud services, and digital tools as well as services
+                                                                        and data flows to enabling smaller businesses to access global markets, encouraging
+                                                                         innovation, and promoting efficient supply chains.
+                                                                </p>
+                                                                <a href="digitaltrade.html" class="btn btn-primary py-3 px-5 mt-4 animated slideInLeft">
+                                                                        Read More
+                                                                </a>
+
+                                                                <div class="row mt-5 flex-wrap flex-md-nowrap ms-1">
+                                                                        <div class="col-4 col-md-3 pe-4">
+                                                                                <div class="py-2">
+                                                                                        <h3 class="count-up" data-target="60" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                        <div style="color:#b3c7e6; font-size:0.95rem;">Projects Delivered</div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-4 col-md-3 px-4">
+                                                                                <div class="py-2">
+                                                                                        <h3 class="count-up" data-target="30" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                        <div style="color:#b3c7e6; font-size:0.95rem;">Clients Served</div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-4 col-md-3 px-4">
+                                                                                <div class="py-2">
+                                                                                        <h3 class="count-up" data-target="15" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                        <div style="color:#b3c7e6; font-size:0.95rem;">African Countries</div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-2 d-none d-md-block text-center"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="owl-carousel-item position-relative" data-dot="<img src='img/indi-img.png'>">
+                        <picture>
+                                <source media="(max-width: 767px)" srcset="img/prop2.png ">
+                                <video class="img-fluid w-100" src="img/e-health.mov" autoplay loop muted playsinline style="object-fit:cover; height: 100vh;">
+                                        Your browser does not support the video tag.
+                                </video>
+                        </picture>
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(180deg, #050E42 0%, rgba(4,12,61,0.38) 100%); z-index:1;">
+                                <div class="owl-carousel-inner owl-carousel-inner-vid position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="z-index:2;">
+                                        <div class="container">
+                                                <div class="row align-items-center">
+                                                        <div class="col-md-8 col-12">
+                                                                <h1 class="display-3 mb-3 text-white animated slideInLeft" id="autoTypeHeading">
+                                                                        Digital Health and eHealth Solutions
+                                                                </h1>
+                                                                <p class="text-white mb-5" style="font-weight: lighter;">
+                                                                       We provide digital health and eHealth Solutions specializing in innovative ICT systems for healthcare delivery.
+                                                                        Our services empower hospitals, clinics, and laboratories to improve efficiency, data management,
+                                                                         and patient outcomes through customized digital platforms, health information systems, 
+                                                                         and smart analytics. We bridge technology and healthcare to enhance service 
+                                                                       quality, streamline operations, and support evidence-based decision-making.
+                                                                </p>
+                                                                <a href="health.html" class="btn btn-primary py-3 px-5 mt-4 animated slideInLeft">
+                                                                        Read More
+                                                                </a>
+
+                                                                <div class="row mt-5 flex-wrap flex-md-nowrap ms-1">
+                                                                        <div class="col-4 col-md-3 pe-4">
+                                                                                <div class="py-2">
+                                                                                        <h3 class="count-up" data-target="60" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                        <div style="color:#b3c7e6; font-size:0.95rem;">Projects Delivered</div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-4 col-md-3 px-4">
+                                                                                <div class="py-2">
+                                                                                        <h3 class="count-up" data-target="30" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                        <div style="color:#b3c7e6; font-size:0.95rem;">Clients Served</div>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="col-4 col-md-3 px-4">
+                                                                                <div class="py-2">
+                                                                                        <h3 class="count-up" data-target="15" style="color:#8fffb1; font-size:1.6rem; font-weight:700; margin-bottom:6px;">0</h3>
+                                                                                        <div style="color:#b3c7e6; font-size:0.95rem;">African Countries</div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-2 d-none d-md-block text-center"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    <!-- Carousel End -->
+
+    <!-- Partners Section Start -->
+
+    <!-- Partners Section End -->
+
+  <section class="partners-section">
+ <div class="partners-text">
+      Trusted by <br> Institutions
+    </div>
+
+    <div class="arrow" id="prevArrow">❮</div>
+    <style>
+        .partners-carousel-wrapper{ padding:10px 20px; }
+        .partners-carousel { display:flex; gap:20px; align-items:center; justify-content:center; overflow:hidden; }
+        .partner-logo { flex:0 0 auto; padding:12px; display:flex; align-items:center; justify-content:center; }
+        .partner-logo img { max-width:160px; height:auto; display:block; margin:0; }
+
+        /* Smaller spacing and images on small screens */
+        @media (max-width: 767px) {
+            .partners-carousel-wrapper{ padding:6px 10px; }
+            .partners-carousel { gap:12px; }
+            .partner-logo { padding:6px; }
+            .partner-logo img { max-width:300px; }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 420px) {
+            .partners-carousel { gap:8px; }
+            .partner-logo img { max-width:80px; }
+        }
+    </style>
+
+    <div class="partners-carousel-wrapper">
+        <div class="partners-carousel" id="partnersCarousel" aria-label="Trusted institutions carousel">
+            <div class="partner-logo">
+              <a href="https://rdb.rw" target="_blank" rel="noopener noreferrer" title="Rwanda Development Board">
+                <img src="https://kigaliselfdrive.com/wp-content/uploads/2023/06/2-2.png" alt="RDB">
+              </a>
+            </div>
+            <div class="partner-logo">
+              <a href="https://www.rra.gov.rw" target="_blank" rel="noopener noreferrer" data-target="blank" title="Rwanda Revenue Authority">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gfXnhyTtkCDWhknLxu4I8dhg8lSzt9b-8A&s" alt="RRA">
+              </a>
+            </div>
+            <div class="partner-logo">
+              <a href="https://www.rab.gov.rw" target="_blank" rel="noopener noreferrer" title="Rwanda Agriculture Board">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlSEijHfIaqTOPRWllw34btnbotYerCm0fT9lqW-__wRmQU8IHoTITlHJ64VpBDEptjo&usqp=CAU" alt="RAB">
+              </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="arrow" id="nextArrow">❯</div>
+  </section>
+
+
+   
+   
+    <!-- Feature Start -->
+  
+    <!-- Feature Start -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden  px-lg-0" id="about">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <video class="position-absolute img-fluid w-100 h-100" src="img/boit-1.mov" style="object-fit: cover;" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                          <h6 class="text-primary">About us</h6>
+                        <div class="about-modern">
+                            <h1 class="mb-4 fw-bold" style="font-size:2.5rem; letter-spacing:-1px;">
+                           Innovating Today to empower Smarter and Sustainable Tomorrow.
+
+
+                            </h1>
+                            <p class="lead text-dark mb-4" style="font-size:1rem;">
+       We are a forward-thinking IT and management consulting firm helping organizations unlock digital transformation and business growth. Our expertise spans Digital Governance, E-Agriculture, Digital Trade, and Digital Health & eHealth Solutions, empowering public and private sectors to harness technology for smarter service delivery.
+Through a holistic approach—combining strategy, operations, financial advisory and Fintech Innovation, HR consulting, change management, marketing & sales consulting, —we deliver results that drive efficiency, resilience, and sustainable impact.<br><br>
+Partner with us to shape your digital future with smart solutions that bridge technology and management excellence.
+
+                            </p>
+                            <!-- <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4">
+                                    <div class="card border-0 h-100 text-center p-4 bg-white rounded-4">
+                                        <div class="icon-circle mb-3 mx-auto" style="background:#e9f2ff;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;">
+                                            <i class="fa fa-bullseye fa-lg text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-semibold mb-2">Mission</h5>
+                                        <p class="mb-0 small text-muted">Empowering organizations to achieve sustainable growth through innovative solutions and expert guidance.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card border-0 h-100 text-center p-4 bg-white rounded-4">
+                                        <div class="icon-circle mb-3 mx-auto" style="background:#e9f2ff;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;">
+                                            <i class="fa fa-eye fa-lg text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-semibold mb-2">Vision</h5>
+                                        <p class="mb-0 small text-muted">To be the leading partner recognized for driving positive change and delivering measurable results worldwide.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <div class="card border-0  h-100 text-center p-4 bg-white rounded-4">
+                                        <div class="icon-circle mb-3 mx-auto" style="background:#e9f2ff;width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:50%;">
+                                            <i class="fa fa-heart fa-lg text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-semibold mb-2">Values</h5>
+                                        <p class="mb-0 small text-muted">Integrity, collaboration, and a commitment to excellence define our approach to every client engagement.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                     
+                      <!-- <a href="" class="btn btn-primary mt-5  py-3 px-5 animated slideInLeft">Read More</a> -->
+
+                        </div>
+                           <a href="about.html" class="btn  py-3 px-5 mt-4 animated slideInLeft">
+                                                                Read More
+                                                        </a>  
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Custom Team Section Start -->
+    <div class="container-fluid team-section-custom py-5" style="background: #010819 url('img/mpact.jpg') center center/cover no-repeat; position: relative; max-height: 2000px;">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row mb-5">
+                <div class="col-12">
+                       <h6 class="text-primary mb-5">Impact</h6>
+                    <!-- <h1 class="display-5 fw-normal text-white mb-4" style="font-family: 'Sora', serif; font-size:2.3rem;">
+                        Now or Never is led by a highly experienced team with an extensive track record backing leading African businesses and demonstrated ability to exit and deliver returns.
+                    </h1> -->
+                </div>
+            </div>
+            <div class="row text-center justify-content-center mb-5">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h1 class="fw-bold team-counter" data-target="5" style="color:#8fffb1; font-size:5rem; font-family:'Sora',sans-serif;">0</h1>
+                    <div class="text-uppercase text-white-50 small" style="letter-spacing:1px;">Combined Years of African Investing Experience</div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h1 class="fw-bold team-counter" data-target="60" style="color:#8fffb1; font-size:5rem; font-family:'Sora',sans-serif;">0</h1>
+                    <div class="text-uppercase text-white-50 small" style="letter-spacing:1px;">Deals Executed</div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                    <h1 class="fw-bold team-counter" data-target="30" style="color:#8fffb1; font-size:5rem; font-family:'Sora',sans-serif;">0</h1>
+                    <div class="text-uppercase text-white-50 small" style="letter-spacing:1px;">Countries Where Transactions Completed</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h1 class="fw-bold team-counter" data-target="5" style="color:#8fffb1; font-size:5rem; font-family:'Sora',sans-serif;">0</h1>
+                    <div class="text-uppercase text-white-50 small" style="letter-spacing:1px;">Core Target Sectors</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+   <!-- <a href="" class="btn btn-primary mt-5  py-3 px-5 animated slideInLeft">Read More</a> -->
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(35,57,93,0.7);z-index:1;"></div>
+        <img src="img/bg-team.jpg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.25;">
+    </div>
+    <!-- Custom Team Section End -->
+     
+    <!-- Why Choose Us Section (expert.io style) Start -->
+    <div class="container-xxl py-5 wow fadeInUp"  data-wow-delay="0.1s" style="background: #fff;">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <!-- Left: Description -->
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <h6 class="text-primary">Why choose us</h6>
+                            <h1 class="mb-5 fw-bold" style="font-size:2.5rem; letter-spacing:-1px;">
+                           Innovating Today to empower Smarter and Sustainable Tomorrow.
+
+
+                            </h1>
+                        <p class="mb-5 lead text-dark" style="font-size:1rem;">
+                            We combine deep industry expertise with innovative digital solutions to help organizations achieve sustainable growth and operational excellence. Our team of IT and Management Consulting professionals delivers tailored strategies, technology integration, and data-driven insights that empower businesses to adapt, compete, and lead in the digital era. With a commitment to quality, integrity, and measurable results, we partner with clients to turn challenges into opportunities and visions into reality.
+                        </p>
+                      <a href="#about" class="btn btn-primary py-3 px-5 mt-4 animated slideInLeft">
+                                Read More 
+
+                            </a>
+
+                    </div>
+                </div>
+
+                <!-- Right: Five cards -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div style="background:#f5f8fc; border-radius:18px; padding:24px; height:100%; box-shadow:0 2px 12px rgba(0,0,0,0.03); text-align:left;">
+                                <span style="display:flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:50%; box-shadow:0 2px 8px rgba(56,255,139,0.08); margin-bottom:18px;">
+                                    <i class="fa fa-user-tie" style="font-size:1.4rem; color:#7ED321;"></i>
+                                </span>
+                                <h5 style="font-weight:600; margin-bottom:8px;">Expertise</h5>
+                                <p style="color:#555; font-size:0.95rem; margin:0;">Team of professionals brings years of experience and deep knowledge to every project.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div style="background:#f5f8fc; border-radius:18px; padding:24px; height:100%; box-shadow:0 2px 12px rgba(0,0,0,0.03); text-align:left;">
+                                <span style="display:flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:50%; box-shadow:0 2px 8px rgba(56,255,139,0.08); margin-bottom:18px;">
+                                    <i class="fa fa-balance-scale" style="font-size:1.4rem; color:#7ED321;"></i>
+                                </span>
+                                <h5 style="font-weight:600; margin-bottom:8px;">Innovation</h5>
+                                <p style="color:#555; font-size:0.95rem; margin:0;">We leverage the latest technologies and strategies to deliver forward technologies and strategies to deliver forward-thinking solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div style="background:#f5f8fc; border-radius:18px; padding:24px; height:100%; box-shadow:0 2px 12px rgba(0,0,0,0.03); text-align:left;">
+                                <span style="display:flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:50%; box-shadow:0 2px 8px rgba(56,255,139,0.08); margin-bottom:18px;">
+                                    <i class="fa fa-bolt" style="font-size:1.4rem; color:#7ED321;"></i>
+                                </span>
+                                <h5 style="font-weight:600; margin-bottom:8px;">Customer-centric approach</h5>
+                                <p style="color:#555; font-size:0.95rem; margin:0;">We prioritize your needs, offering personalized services that your needs, offering personalized services that align with your goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div style="background:#f5f8fc; border-radius:18px; padding:24px; height:100%; box-shadow:0 2px 12px rgba(0,0,0,0.03); text-align:left;">
+                                <span style="display:flex; align-items:center; justify-content:center; width:52px; height:52px; border-radius:50%; box-shadow:0 2px 8px rgba(56,255,139,0.08); margin-bottom:18px;">
+                                    <i class="fa fa-chart-line" style="font-size:1.4rem; color:#7ED321;"></i>
+                                </span>
+                                <h5 style="font-weight:600; margin-bottom:8px;">Commitment to excellence</h5>
+                                <p style="color:#555; font-size:0.95rem; margin:0;">Our dedication to quality ensures that we exceed expectations at every step.</p>
+                            </div>
+                        </div>
+
+                        <!-- Fifth card spans full width on small screens, half on md -->
+                        <div class="col-12">
+                            <div class="d-flex flex-column flex-md-row align-items-start gap-3"
+                                 style="background:#1128B3; border-radius:18px; padding:18px; color:#fff; box-shadow:0 2px 12px rgba(0,0,0,0.03);">
+                                <span class="d-flex align-items-center justify-content-center"
+                                      style="width:56px; height:56px; border-radius:50%; box-shadow:0 2px 8px rgba(56,255,139,0.08); background:rgba(255,255,255,0.03); flex:0 0 56px;">
+                                    <i class="fa fa-bullseye" style="font-size:1.4rem; color:#ffffff;"></i>
+                                </span>
+
+                                <div style="flex:1 1 auto; min-width:0;">
+                                    <h5 class="mb-2" style="font-weight:600; color:#fff;">Diverse service portfolio</h5>
+                                    <p class="mb-0" style="color:#e5e5e5; font-size:0.95rem;">
+                                        From IT and management consulting to<br> sector-specific digital interventions.
+                                    </p>
+                                </div>
+
+                                <div class="mt-3 mt-md-0" style="flex:0 0 auto;">
+                                    <a href="#"
+                                       class="btn"
+                                       style="background:#74a404; color:#fff; font-weight:600; border-radius:6px; padding:10px 18px; margin-top: 15px; text-decoration:none; display:inline-block; width:100%; max-width:220px;"
+                                       role="button">
+                                        Talk to Us →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section (expert.io style) End --></div>
+    <!-- Why Choose Us (Custom Section) Start -->
+ 
+              
+    </div> 
+    <!-- Why Choose Us (Custom Section) End -->
+
+
+
+
+
+
+
+    <!-- Projects Start -->
+<!-- Products Section Start -->
+    <section class="container-fluid my-5 px-lg-0"  id="services" style="background:#ffffff;">
+        <div class="container">
+            <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width:720px;">
+                <h6 class="text-primary mt-5">Our Services</h6>
+                <h2 class="text-dark fw-bold">Technology and Consulting Services</h2>
+                <p class="text-muted">Swipe/scroll through our capabilities. Each card includes a visual to help you explore quickly.</p>
+            </div>
+
+            <!-- sticky intro card -->
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Data, Advanced Analytics and Data Science</h4>
+                            <p>Transform data into actionable insights through advanced analytics, machine learning, and AI-driven intelligence.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Emerging Technologies (AI, Blockchain, IoT & Cloud)</h4>
+                            <p>Integrate cutting-edge technologies to drive innovation, efficiency, and sustainable competitive advantage.
+
+</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">IT Audit, Compliance & Quality Assurance</h4>
+                            <p>Strengthen digital integrity through comprehensive audits, standards alignment, and risk management.
+
+</p>
+                       
+                        </div>
+                    </div>
+                </div>
+             
+            
+              
+            </div>
+                    <a href="service.html" class="btn btn-primary py-3 px-5 mt-4 animated slideInLeft">
+                                More Services
+
+                            </a>
+        </div>
+
+        <style>
+            .text-white-70{color:rgba(255,255,255,0.75);}
+            .services-scroller{
+                display:flex; gap:18px; overflow-x:auto; padding-bottom:8px;
+                scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+            }
+            .services-scroller::-webkit-scrollbar{height:10px;}
+            .services-scroller::-webkit-scrollbar-thumb{background:#ddd;border-radius:999px;}
+            .service-card{
+                scroll-snap-align:start; flex:0 0 340px; background:#f8f9fa; border-radius:14px;
+                box-shadow:0 8px 28px rgba(0,0,0,0.08); overflow:hidden; transition:transform .18s ease, box-shadow .18s ease;
+                border:1px solid rgba(0,0,0,0.05);
+            }
+            .service-card:hover{ transform:translateY(-4px); box-shadow:0 18px 40px rgba(0,0,0,0.12); }
+            .service-thumb{ height:160px; background:#e9ecef center/cover no-repeat; }
+            .service-body{ padding:16px; color:#333; }
+            .service-body h5{ margin:0 0 8px; font-weight:700; font-size:1rem; color:#000; }
+            .service-body p{ margin:0; font-size:0.92rem; color:#666; }
+
+            .scroll-controls{ 
+                display:flex; gap:16px; justify-content:flex-end; margin-top:16px; 
+            }
+            .scroll-btn{
+                width:50px; height:50px; border-radius:50%;
+                border:2px solid #74a404; background:#fff; color:#74a404;
+                font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center;
+                transition:all .3s ease; box-shadow:0 2px 8px rgba(116,164,4,0.15);
+            }
+            .scroll-btn:hover{
+                background:#74a404; color:#fff; box-shadow:0 6px 16px rgba(116,164,4,0.3);
+                transform:scale(1.05);
+            }
+            .scroll-btn:active{ transform:scale(0.95); }
+            .scroll-btn.prev{ border-color:#1128B3; color:#1128B3; }
+            .scroll-btn.prev:hover{ background:#1128B3; box-shadow:0 6px 16px rgba(17,40,179,0.3); }
+
+            @media (max-width:576px){
+                .service-card{ flex-basis:84vw; }
+                .service-thumb{ height:150px; }
+                .scroll-btn{ width:44px; height:44px; font-size:1rem; }
+            }
+        </style>
+
+        <script>
+            (function(){
+                const scroller = document.querySelector('.services-scroller');
+                const images = [
+                    'img/data.jpg',
+                    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=1600&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop'
+                ];
+                document.querySelectorAll('.service-card .service-thumb').forEach((el, i)=>{
+                    const idx = Math.floor(Math.random() * images.length);
+                    el.style.backgroundImage = `url('${images[(idx + i) % images.length]}')`;
+                });
+
+                const prev = document.querySelector('.scroll-btn.prev');
+                const next = document.querySelector('.scroll-btn.next');
+                const step = () => Math.min(360, Math.max(300, scroller.clientWidth / 3));
+                prev.addEventListener('click', ()=> scroller.scrollBy({left:-step(), behavior:'smooth'}));
+                next.addEventListener('click', ()=> scroller.scrollBy({left: step(), behavior:'smooth'}));
+
+                // drag to scroll
+                let isDown=false, startX=0, scrollLeft=0;
+                scroller.addEventListener('mousedown', e=>{ isDown=true; startX=e.pageX - scroller.offsetLeft; scrollLeft=scroller.scrollLeft; scroller.style.cursor='grabbing'; });
+                scroller.addEventListener('mouseleave', ()=>{ isDown=false; scroller.style.cursor='auto'; });
+                scroller.addEventListener('mouseup', ()=>{ isDown=false; scroller.style.cursor='auto'; });
+                scroller.addEventListener('mousemove', e=>{
+                    if(!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - scroller.offsetLeft;
+                    const walk = (x - startX) * 1.2;
+                    scroller.scrollLeft = scrollLeft - walk;
+                });
+                scroller.addEventListener('touchstart', ()=>{}, {passive:true});
+
+                // auto scroll (pause on hover/focus, reverse at ends)
+                let dir = 1;
+                let rafId = null;
+                let paused = false;
+
+                function atStart() { return scroller.scrollLeft <= 0; }
+                function atEnd() { return Math.ceil(scroller.scrollLeft + scroller.clientWidth) >= scroller.scrollWidth; }
+
+                function tick(){
+                    if(paused) { rafId = requestAnimationFrame(tick); return; }
+                    const delta = Math.max(0.3, scroller.clientWidth / 1200);
+                    scroller.scrollLeft += delta * dir;
+
+                    if(atEnd()) dir = -1;
+                    if(atStart()) dir = 1;
+
+                    rafId = requestAnimationFrame(tick);
+                }
+
+                ['mouseenter','focusin','touchstart'].forEach(ev=>{
+                    scroller.addEventListener(ev, ()=> paused = true, {passive:true});
+                });
+                ['mouseleave','focusout','touchend'].forEach(ev=>{
+                    scroller.addEventListener(ev, ()=> paused = false, {passive:true});
+                });
+
+                const io = new IntersectionObserver(entries=>{
+                    entries.forEach(e=>{
+                        if(e.isIntersecting){
+                            if(!rafId) rafId = requestAnimationFrame(tick);
+                        } else {
+                            if(rafId) { cancelAnimationFrame(rafId); rafId = null; }
+                        }
+                    });
+                }, {threshold:0.1});
+                io.observe(scroller);
+            })();
+        </script>
+    </section>
+
+    <!-- Service Start -->
+    <div id="products" class="container-fluid py-5" style="background:#ffffff; margin-top: 100px;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <!-- <h6 class="text-primary">IT Sector specific services</h6> -->
+                <h1 class="mb-4" style="color:#003366;">Innovative Digital Solutions Designed to Accelerate Transformation Across Every Sector</h1>
+                <p class="w-100" style="color:#003366;">Our Digital Solutions help governments, health providers,
+                     farmers, and businesses address sector-specific challenges through innovative technology.
+                      We streamline public services, enhance healthcare with data-driven tools, 
+                      connect farmers to markets and information, and enable secure,
+                       efficient digital trade. Together,
+                        these solutions drive transformation, efficiency, and sustainability across all sectors. </p>
+           
+            </div>
+            <div class="row g-4">
+                <style>
+                    @media (max-width: 768px) {
+                        .service-card {
+                            max-width: 90%;
+                            margin: 0 auto;
+                        }
+                    }
+                    @media (max-width: 576px) {
+                        .service-card {
+                            max-width: 85%;
+                            margin: 0 auto;
+                        }
+                        .service-card .card-body {
+                            padding: 1rem !important;
+                        }
+                        .service-card h5 {
+                            font-size: 1rem;
+                        }
+                        .service-card p {
+                            font-size: 0.85rem;
+                        }
+                    }
+                </style>
+                <!-- E-Government -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card service-card h-100 text-center" style="background: linear-gradient(135deg, #74a404 0%, #1128B3 100%); border: none; color: #fff;">
+                        <div class="card-body px-4 py-5">
+                            <div class="mb-4 bg-light rounded-circle" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:auto;">
+                                <i class="fa fa-university fa-3x" style="color: #74a404;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3" style="color: #fff;">Digital Governance & E-Government Solutions</h5>
+                            <p class="mb-4 small" style="color: #e5e5e5;">
+We help governments and institutions digitalize public services through secure, citizen-centered e-Government solutions that improve efficiency,
+ transparency, and data-driven decision-making for faster and more inclusive service delivery.
+                            </p>
+                       <a class="text-white text-decoration-none" href="" style="font-weight: light; display: inline-flex; align-items: center; gap: 8px;">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Digital Health -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card service-card h-100 text-center" style="background: linear-gradient(135deg, #74a404 0%, #1128B3 100%); border: none; color: #fff;">
+                        <div class="card-body px-4 py-5">
+                            <div class="mb-4 bg-light rounded-circle" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:auto;">
+                                <i class="fa fa-heartbeat fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-white">Data, Analytics & AI Platforms</h5>
+                            <p class="mb-4 small text-white">
+We deliver innovative digital health solutions—from telemedicine and mHealth to EHRs, AI insights,
+ and data analytics—to streamline operations,
+ improve decision-making, and enhance patient care for a more connected healthcare experience. 
+                            </p>
+                              <a class="text-white text-decoration-none" href="" style="font-weight: light; display: inline-flex; align-items: center; gap: 8px;">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- E-Agriculture -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card service-card h-100 text-center" style="background: linear-gradient(135deg, #74a404 0%, #1128B3 100%); border: none; color: #fff;">
+                        <div class="card-body px-4 py-5">
+                            <div class="mb-4 bg-light rounded-circle" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:auto;">
+                                <i class="fa fa-leaf fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-white">Digital Health & eHealth Solutions</h5>
+                            <p class="mb-4 small text-white">
+We provide innovative digital health and eHealth solutions that empower healthcare providers with secure patient management systems, telemedicine platforms, electronic health records (EHR), real-time health analytics, and AI-driven clinical decision support—enabling better patient outcomes, streamlined operations, and data-driven healthcare delivery in a more connected and efficient health ecosystem.
+                            </p>
+            <a class="text-white text-decoration-none" href="" style="font-weight: light; display: inline-flex; align-items: center; gap: 8px;">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Enterprise IT Management Tools -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card service-card h-100 text-center" style="background: linear-gradient(135deg, #74a404 0%, #1128B3 100%); border: none; color: #fff;">
+                        <div class="card-body px-4 py-5">
+                            <div class="mb-4 bg-light rounded-circle" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:auto;">
+                                <i class="fa fa-lightbulb fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-white">E-Agriculture & Smart Farming Platforms</h5>
+                            <p class="mb-4 small text-white">
+We provide E-Agriculture solutions that give farmers and agribusinesses real-time market insights,
+ digital trading platforms, remote learning tools, and advanced analytics—empowering them to farm smarter,
+ trade efficiently, and make data-driven decisions in a more connected agricultural ecosystem
+                            </p>
+                            <a class="text-white text-decoration-none" href="" style="font-weight: light; display: inline-flex; align-items: center; gap: 8px;">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Digital Trade, Customs & Export Facilitation -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card service-card h-100 text-center" style="background: linear-gradient(135deg, #74a404 0%, #1128B3 100%); border: none; color: #fff;">
+                        <div class="card-body px-4 py-5">
+                            <div class="mb-4 bg-light rounded-circle" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:auto;">
+                                <i class="fa fa-lightbulb fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-white">Digital Trade, Customs & Export Facilitation Solutions
+</h5>
+                            <p class="mb-4 small text-white">
+We deliver end-to-end digital trade solutions—from e-commerce and digital payments to e-customs,
+ clearing & forwarding, and cross-border data systems—to simplify trade processes,
+ accelerate transactions, and expand market access with secure, efficient technology.                            </p>
+                             <a class="text-white text-decoration-none" href="" style="font-weight: light; display: inline-flex; align-items: center; gap: 8px;">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Digital Transformation Consulting -->
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card service-card h-100 text-center" style="background: linear-gradient(135deg, #74a404 0%, #1128B3 100%); border: none; color: #fff;">
+                        <div class="card-body px-4 py-5">
+                            <div class="mb-4 bg-light rounded-circle" style="width:80px; height:80px; display:flex; align-items:center; justify-content:center; margin:auto;">
+                                <i class="fa fa-lightbulb fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-white">Enterprise IT Management Tools</h5>
+                            <p class="mb-4 small text-white">
+Comprehensive IT infrastructure management, monitoring, and optimization solutions that enable seamless operations, enhanced security, and peak performance across your enterprise systems and networks.
+We deliver end-to-end digital trade solutions—from e-commerce and digital payments to e-customs,
+ clearing & forwarding, and cross-border data systems—to simplify trade processes,
+ accelerate transactions, and expand market access with secure, efficient technology.                            </p>
+                            <a class="text-white text-decoration-none" href="" style="font-weight: light; display: inline-flex; align-items: center; gap: 8px;">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Management Services Section Start -->
+<section class="container-fluid py-5" style="margin-top: 100px;">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width:720px;">
+            <!-- <h6 class="text-primary">Management Services</h6> -->
+            <h1 class="mb-4 fw-bold" style="font-size:2.5rem;">Management Consulting services: Empowering Businesses, Transforming Futures</h1>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs border-0" id="managementTabs" role="tablist" style="gap: 12px; flex-wrap: wrap; justify-content: center;">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active fw-bold" id="strategy-tab" data-bs-toggle="tab" data-bs-target="#strategy" type="button" role="tab" aria-controls="strategy" aria-selected="true" style="color: #003366;">
+                            <i class="fa fa-bullseye me-2"></i>Strategy & Governance
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="financial-tab" data-bs-toggle="tab" data-bs-target="#financial" type="button" role="tab" aria-controls="financial" aria-selected="false" style="color: #003366;">
+                            <i class="fa fa-chart-line me-2"></i>Financial & Business Advisory
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="operations-tab" data-bs-toggle="tab" data-bs-target="#operations" type="button" role="tab" aria-controls="operations" aria-selected="false" style="color: #003366;">
+                            <i class="fa fa-cogs me-2"></i>Operations & Process
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital" type="button" role="tab" aria-controls="digital" aria-selected="false" style="color: #003366;">
+                            <i class="fa fa-laptop me-2"></i>Digital Transformation
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing" type="button" role="tab" aria-controls="marketing" aria-selected="false" style="color: #003366;">
+                            <i class="fa fa-bullhorn me-2"></i>Marketing & Sales
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="supply-tab" data-bs-toggle="tab" data-bs-target="#supply" type="button" role="tab" aria-controls="supply" aria-selected="false" style="color: #003366;">
+                            <i class="fa fa-truck me-2"></i>Supply Chain
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="managementTabContent">
+            <!-- Strategy & Governance Tab -->
+            <div class="tab-pane fade show active" id="strategy" role="tabpanel" aria-labelledby="strategy-tab">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" alt="Strategy & Governance" class="img-fluid rounded-3xl" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3" style="font-size: 1.8rem;">Strategy & Governance</h3>
+                        <p class="lead mb-4" style="font-size: 1rem; color: #555;">Develop robust organizational strategies and governance frameworks that align with your business objectives and stakeholder expectations.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Strategic Planning:</strong> Comprehensive roadmaps for growth and market positioning</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Corporate Governance:</strong> Policy frameworks and compliance structures</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Risk Management:</strong> Identify, assess, and mitigate organizational risks</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Board Advisory:</strong> Executive guidance and decision support</li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial & Business Advisory Tab -->
+            <div class="tab-pane fade" id="financial" role="tabpanel" aria-labelledby="financial-tab">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop" alt="Financial Advisory" class="img-fluid rounded-3xl" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3" style="font-size: 1.8rem;">Financial & Business Advisory</h3>
+                        <p class="lead mb-4" style="font-size: 1rem; color: #555;">Maximize financial performance and unlock business value through strategic financial planning, investment advisory, and business restructuring.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Financial Planning:</strong> Budgeting, forecasting, and performance analytics</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>M&A Advisory:</strong> Merger, acquisition, and divestiture support</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Fintech Solutions:</strong> Digital payment systems and financial innovation</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Cost Optimization:</strong> Identify efficiencies and reduce operational expenses</li>
+                        </ul>
+                     
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operations & Process Improvement Tab -->
+            <div class="tab-pane fade" id="operations" role="tabpanel" aria-labelledby="operations-tab">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" alt="Operations Improvement" class="img-fluid rounded-3xl" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3" style="font-size: 1.8rem;">Operations & Process Improvement</h3>
+                        <p class="lead mb-4" style="font-size: 1rem; color: #555;">Streamline operations and enhance efficiency through lean methodologies, process automation, and continuous improvement initiatives.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Lean Management:</strong> Eliminate waste and optimize workflows</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Process Automation:</strong> Implement RPA and workflow automation</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Quality Management:</strong> ISO certifications and Six Sigma initiatives</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Change Management:</strong> Organizational transformation and adoption support</li>
+                        </ul>
+            
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Transformation Tab -->
+            <div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1600&auto=format&fit=crop" alt="Digital Transformation" class="img-fluid rounded-3xl" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3" style="font-size: 1.8rem;">Digital Transformation</h3>
+                        <p class="lead mb-4" style="font-size: 1rem; color: #555;">Navigate your organization's digital journey with strategic guidance, technology enablement, and cultural change management.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Digital Strategy:</strong> Comprehensive roadmaps for digital maturity</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Technology Stack:</strong> ERP, CRM, and cloud solutions implementation</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Data Modernization:</strong> Data warehouse and analytics platform setup</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Digital Culture:</strong> Training, upskilling, and organizational readiness</li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing & Sales Tab -->
+            <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" alt="Marketing & Sales" class="img-fluid rounded-3xl" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3" style="font-size: 1.8rem;">Marketing & Sales Consulting</h3>
+                        <p class="lead mb-4" style="font-size: 1rem; color: #555;">Drive revenue growth and market expansion through data-driven marketing strategies, sales enablement, and customer experience optimization.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Go-to-Market Strategy:</strong> Launch plans for products and services</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Sales Enablement:</strong> Training, tools, and processes for high performance</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Digital Marketing:</strong> Multi-channel campaigns and brand positioning</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Customer Analytics:</strong> Segmentation, personalization, and retention strategies</li>
+                        </ul>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supply Chain Tab -->
+            <div class="tab-pane fade" id="supply" role="tabpanel" aria-labelledby="supply-tab">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop" alt="Supply Chain Optimization" class="img-fluid rounded-3xl" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3" style="font-size: 1.8rem;">Supply Chain Optimization</h3>
+                        <p class="lead mb-4" style="font-size: 1rem; color: #555;">Enhance supply chain resilience and efficiency through network optimization, procurement strategy, and logistics management.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Network Optimization:</strong> Design efficient distribution networks</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Procurement Strategy:</strong> Vendor management and cost reduction</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Demand Planning:</strong> Forecasting and inventory optimization</li>
+                            <li class="mb-3"><i class="fa fa-check text-primary me-2"></i><strong>Logistics & Logistics:</strong> Last-mile delivery and logistics technology</li>
+                        </ul>
+           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .nav-tabs {
+            border-bottom: 2px solid #e9ecef;
+        }
+        .nav-tabs .nav-link {
+            color: #666;
+            border: none;
+            border-bottom: 3px solid transparent;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            color: #74a404;
+            border-bottom-color: #74a404;
+        }
+        .nav-tabs .nav-link.active {
+            color: #74a404;
+            border-bottom-color: #74a404;
+            background-color: transparent;
+        }
+        .tab-pane {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</section>
+<!-- Management Services Section End -->
+    <!-- Service End -->
+
+<!-- Products Section End -->
+    <!-- Projects End -->
+
+
+
+
+
+    <!-- Team Start -->
+     <!-- <section class="" style="margin-top: 100px;" id="team">
+   <div class="container-fluid  overflow-hidden px-lg-0 ">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Team Member</h6>
+                <h1 class="mb-4">Experienced Team Members</h1>
+            </div>
+            <div class="row g-4">
+    
+             
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+      
+                <a href="cynthia.html" style="text-decoration: none; color: inherit;">
+                    <div class="team-card h-100">
+                        <div class="team-image-wrapper">
+                            <img class="team-image" src="img/team/cyntia_2.jpeg" alt="Cynthia Cyibukayire">
+                            <div class="team-overlay">
+                                <a href="cynthia.html" class="btn btn-primary" style="padding: 10px 20px; font-weight: 600; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.color='#74a404';" onmouseout="this.style.backgroundColor=''; this.style.color='';">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4>Cynthia Cyibukayire</h4>
+                            <p class="role">Managing Director</p>
+                            <div class="contact-info">
+                                <a href="mailto:ccyibukayire@non.com"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:+250788673309"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        </div>
+
+      
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <a href="staff_bio.html?id=2" style="text-decoration: none; color: inherit;">
+                <div class="team-card h-100">
+                    <div class="team-image-wrapper">
+                        <img class="team-image" src="img/team-3.png" alt="Jean Claude Ndacyayisenda">
+                        <div class="team-overlay">
+                                                        <a href="staff_bio.html?id=1" class="btn btn-primary" style="padding: 10px 20px; font-weight: 600; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.color='#74a404';" onmouseout="this.style.backgroundColor=''; this.style.color='';">View Profile</a>
+
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Jean Claude Ndacyayisenda</h4>
+                        <p class="role">Senior Consultant</p>
+                        <div class="contact-info">
+                            <a href="mailto:jcndacyayisenda@non.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+250788732511"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+  
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <a href="augustin.html" style="text-decoration: none; color: inherit;">
+                <div class="team-card h-100">
+                    <div class="team-image-wrapper">
+                        <img class="team-image" src="img/Team/Ndayambaje.jpeg" alt="Augustin Ndayambaje">
+                        <div class="team-overlay">
+                                                                                <a href="augustin.html" class="btn btn-primary" style="padding: 10px 20px; font-weight: 600; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.color='#74a404';" onmouseout="this.style.backgroundColor=''; this.style.color='';">View Profile</a>
+
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Augustin Ndayambaje</h4>
+                        <p class="role">Consultant</p>
+                        <div class="contact-info">
+                            <a href="mailto:andayambaje@non.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+250783199105"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="about.html#team" class="btn" style="background:#74a404; color:#fff; font-weight:600; padding:12px 28px; border-radius:8px;">
+                        Meet our full team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     </section> -->
+ 
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Testimonial</h6>
+                <h1 class="mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg" alt="Jean Ndayisaba">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Now or Never LTD delivered a seamless digital solution for our government project. Their professionalism and expertise exceeded our expectations.</p>
+                        <h5 class="mb-1">Jean Ndayisaba</h5>
+                        <span class="fst-italic">ICT Director, Rwanda Biomedical Centre (RBC)</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg" alt="Aline Uwase">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Their team helped us implement an e-agriculture platform that has transformed how we support farmers across Rwanda. Highly recommended!</p>
+                        <h5 class="mb-1">Aline Uwase</h5>
+                        <span class="fst-italic">Project Manager, Rwanda Agriculture Board (RAB)</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg" alt="Eric Mugisha">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>We appreciate the innovative digital health solutions from Now or Never LTD. Their support has been crucial for our hospital’s digital transformation.</p>
+                        <h5 class="mb-1">Eric Mugisha</h5>
+                        <span class="fst-italic">Head of IT, King Faisal Hospital Rwanda</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Call to Action Section Start -->
+    <section class="cta-section" style="position:relative; background: #050e4200 url('img/future-hero-bg.jpg') center center/cover no-repeat; min-height: 420px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(10, 20, 60, 0.756);z-index:1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-6 fw-bold text-white mb-4" style="font-family:'Sora',sans-serif;">Ready to Drive Sustainable Innovation?</h1>
+                    <p class="lead text-white mb-5" style="font-size:1rem; font-weight:200;">
+                        Partner with Now or Never LTD to unlock digital transformation, expert consulting, and impactful technology for your organization’s growth and success.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary py-3 px-5 animated slideInLeft">Contact us Today</a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action Section End -->
+    <!-- Footer Start -->
+   <div class="container-fluid  text-body footer  pt-5 wow fadeIn" data-wow-delay="0.1s" >
+        <div class="container py-5">
+            <div class="row g-5">
+            <!-- About Company -->
+            <div class="col-lg-4 col-md-6 ">
+                <h4 class="text-white mb-4 fw-bold"> Now or Never LTD</h4>
+                <p class="text-white mb-3" style="font-weight: lighter !important;">
+               NoN empowers Africa's digital future through innovative technology, expert consulting, and a passion for sustainable impact. We help organizations transform, grow, and thrive in a rapidly changing world.
+                </p>
+                <div class="d-flex mb-3">
+                <a class="btn btn-square  btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square  btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square  btn-social me-2" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-square btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-4 fw-bold">Quick Links</h4>
+                <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="about.html" class="text-white text-decoration-none" style="font-weight: lighter !important;"><i class="fa fa-angle-right text-primary me-2"></i>About Us</a></li>
+                           <li class="mb-2"><a href="index.html#products" class="text-white text-decoration-none" style="font-weight: lighter !important;"><i class="fa fa-angle-right text-primary me-2"></i>Our Products</a></li>
+                <li class="mb-2"><a href="service.html" class="text-white text-decoration-none" style="font-weight: lighter !important;"><i class="fa fa-angle-right text-primary me-2"></i>Our Services</a></li>
+                <!-- <li class="mb-2"><a href="project.html" class="text-white-50 text-decoration-none"><i class="fa fa-angle-right text-primary me-2"></i>Projects</a></li> -->
+                <li class="mb-2"><a href="about.html#team" class="text-white text-decoration-none" style="font-weight: lighter !important;"><i class="fa fa-angle-right text-primary me-2"></i>Our Team</a></li>
+                <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none" style="font-weight: lighter !important;"><i class="fa fa-angle-right text-primary me-2"></i>Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-12">
+                <h4 class="text-white mb-4 fw-bold">Contact Us</h4>
+                <p class="mb-2 text-white" style="font-weight: lighter !important;"><i class="fa fa-map-marker-alt text-primary me-2"></i>KN 3RD, 2nd Floor Kigali, Rwanda</p>
+                <a href="mailto:noworneverltd2@gmail.com" class="text-white text-decoration-none"><p class="mb-2 text-white" style="font-weight: lighter !important;"><i class="fa fa-envelope text-primary me-2"></i>noworneverltd2@gmail.com</p></a>
+                <p class="mb-2 text-white" style="font-weight: lighter !important;"><i class="fa fa-phone-alt text-primary me-2"></i>+250 7888 64 02</p>
+                <ul class="list-unstyled mt-3">
+                <li class="mb-2" style="font-weight: lighter !important;"><a href="privacy_policy.html" class="text-white text-decoration-none"><i class="fa fa-shield-alt text-primary me-2"></i>Privacy Policy</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary text-center py-3" style="background: #00000000 !important;">
+            <span class="text-light" style="font-weight: lighter !important;">&copy; <span class="">Now or Never Ltd</span>, All Rights Reserved.</span>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Cookies Consent Popup Start -->
+ 
+    <!-- Cookies Consent Popup End -->
+
+    <script>
+        // Show popup on page load if not accepted
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieConsentPopup').style.display = 'block';
+            }
+        });
+
+        // Accept all cookies
+        document.getElementById('cookieAcceptBtn').onclick = function() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsentPopup').style.display = 'none';
+        };
+
+        // Customize cookies (for demo, just close popup)
+        document.getElementById('cookieCustomizeBtn').onclick = function() {
+            // You can open a modal or settings page here
+            document.getElementById('cookieConsentPopup').style.display = 'none';
+        };
+    </script>
+ 
+
+    
+    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+       <!-- Particle.js CDN -->
+                <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
