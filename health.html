@@ -46,56 +46,263 @@
 
 
     <!-- Navbar Start -->
-   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light sticky-top p-0" style="background: white; transition: background 0.3s;">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-      <img src="img/logo_non-removebg-preview.png" alt="Now or Never LTD Logo" style="height: 100px;">
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="index.html" class="nav-item nav-link">About</a>
-                <a href="" class="nav-item nav-link active">Our Service</a>
-                <a href="" class="nav-item nav-link">Our Products</a>
-                <!-- Login Button in Navbar -->
-                <!-- <a href="#" id="loginLink" class="nav-item nav-link">Login</a> -->
-                <!-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div> -->
-                <a href="contact.html" class="nav-item nav-link">Blog</a>
-                            <!-- Search icon in navbar -->
-                            <a href="#" id="navSearchBtn" class="nav-item nav-link" role="button" aria-label="Open search" style="cursor:pointer;">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
+   <!-- Modern Navbar CSS -->
+    <style>
+        .modern-navbar {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
 
-                            <!-- Floating search + overlay (placed inside navbar collapse so it loads with the page) -->
-                            <div id="navSearchOverlay" style="display:none; position:fixed; inset:0; z-index:2000; background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px; box-sizing:border-box;">
-                              <div id="navSearchBox" role="dialog" aria-modal="true" aria-label="Site search"
-                                   style="background:#fff; width:clamp(320px,70%,900px); margin:0 20px; border-radius:10px; padding:18px; box-shadow:0 10px 40px rgba(0,0,0,0.4);">
-                                <div style="display:flex; gap:8px; align-items:center;">
-                                  <input id="navSearchInput" type="search" placeholder="Search the site..." autofocus
-                                         style="flex:1; border:1px solid #e6e6e6; border-radius:8px; padding:12px 14px; font-size:1rem; outline:none;">
-                                  <button id="navSearchSubmit" class="btn btn-primary" style="padding:10px 14px; font-weight:600;">
-                                    <i class="fa fa-search"></i>
-                                  </button>
-                               
-                                </div>
-                              </div>
-                            </div>
+        .modern-navbar.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            padding: 0.75rem 0;
+        }
 
-                      
+        .navbar-brand-modern {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand-modern:hover {
+            transform: scale(1.02);
+        }
+
+        .navbar-brand-modern img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-menu-modern {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item-modern {
+            position: relative;
+        }
+
+        .nav-link-modern {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link-modern::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #74a404, #1128B3);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link-modern:hover::after,
+        .nav-link-modern.active::after {
+            width: 100%;
+        }
+
+        .nav-link-modern:hover {
+            color: #74a404;
+        }
+
+        .nav-link-modern.active {
+            color: #74a404;
+        }
+
+        .search-icon-modern {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: none;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .search-icon-modern:hover {
+            background: rgba(116, 164, 4, 0.1);
+            color: #74a404;
+        }
+
+  
+        .cta-btn-modern {
+            background: linear-gradient(135deg, #74a404 0%, #1128B3 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+          
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .cta-btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(116, 164, 4, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+
+        .hamburger-modern {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .hamburger-modern span {
+            width: 24px;
+            height: 2.5px;
+            background: #333;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-modern.active span:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .hamburger-modern.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-modern.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu-modern {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: white;
+                border-top: 1px solid #e9ecef;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                padding: 0;
+            }
+
+            .nav-menu-modern.active {
+                max-height: 400px;
+                padding: 1rem 0;
+            }
+
+            .nav-item-modern {
+                width: 100%;
+                padding: 0;
+            }
+
+            .nav-link-modern {
+                display: block;
+                padding: 1rem;
+                border-left: 3px solid transparent;
+                transition: all 0.3s ease;
+            }
+
+            .nav-link-modern::after {
+                display: none;
+            }
+
+            .nav-link-modern:hover,
+            .nav-link-modern.active {
+                background: rgba(116, 164, 4, 0.08);
+                border-left-color: #74a404;
+                padding-left: 2rem;
+            }
+
+            .hamburger-modern {
+                display: flex;
+            }
+
+            .cta-btn-modern {
+                width: 100%;
+                justify-content: center;
+                margin: 1rem;
+            }
+
+            .nav-menu-modern .nav-item-modern:last-child {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+
+    <!-- Modern Navbar HTML -->
+    <nav class="modern-navbar" id="modernNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="navbar-brand-modern">
+                    <img src="img/logo_non-removebg-preview.png" alt="Now or Never LTD Logo">
+                </a>
+
+                <button class="hamburger-modern" id="hamburgerBtn" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu-modern" id="navMenu">
+                    <li class="nav-item-modern">
+                        <a href="index.html" class="nav-link-modern ">Home</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="about.html" class="nav-link-modern">About</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="service.html" class="nav-link-modern active">Services</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="index.html#products" class="nav-link-modern">Products</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <a href="blog.html" class="nav-link-modern">Blog</a>
+                    </li>
+                    <li class="nav-item-modern">
+                        <button class="search-icon-modern" id="searchBtnModern" aria-label="Search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <a href="contact.html" class="cta-btn-modern d-none d-lg-inline-flex">
+                    CONTACT US <i class="fa fa-arrow-right"></i>
+                </a>
             </div>
-            
-            <a href="contact.html" class="btn   py-4 px-lg-5 d-none d-lg-block" style="font-size: 12px; background-color: #74a404; color: white;"  >CONTACT US<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->

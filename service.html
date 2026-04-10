@@ -147,11 +147,12 @@
             color: #74a404;
         }
 
+  
         .cta-btn-modern {
             background: linear-gradient(135deg, #74a404 0%, #1128B3 100%);
             color: white;
             padding: 0.75rem 1.5rem;
-            border-radius: 8px;
+          
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
@@ -162,6 +163,7 @@
             border: none;
             cursor: pointer;
         }
+
 
         .cta-btn-modern:hover {
             transform: translateY(-2px);
@@ -480,15 +482,507 @@
                         </div>
                     </div>
                 </div>
+             
             </div>
         </div>
     </div>
     <!-- Service End -->
+    <style>
+        .assessment-section,
+        .deliverables-section,
+        .advisory-section,
+        .faq-section {
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+        }
+
+        .assessment-section {
+            padding: 5rem 1rem 2rem;
+            background: #f8fafc;
+        }
+
+        .assessment-section .section-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .assessment-section .section-top h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0;
+            color: #003366;
+        }
+
+        .assessment-section .section-top p {
+            color: #475569;
+            max-width: 680px;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .assessment-section .phase-label {
+            color: #15803d;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .process-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 1.75rem;
+            min-height: 220px;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+        }
+
+        .process-card .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: #74a404;
+            color: #dcfce7;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .process-card .phase {
+            color: #94a3b8;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .process-card h3 {
+            font-size: 1.05rem;
+            margin: 0 0 0.85rem;
+            color: #003366;
+        }
+
+        .process-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+        .deliverables-section {
+            padding: 4rem 1rem 3rem;
+            background: #f8fafc;
+        }
+
+        .deliverables-section .center-header {
+            max-width: 760px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+
+        .deliverables-section .center-header h2 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 0.8rem;
+            color: #003366;
+        }
+
+        .deliverables-section .center-header p {
+            color: #475569;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .deliverable-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 1.75rem;
+            min-height: 220px;
+            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+        }
+
+        .deliverable-card .icon-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: #f1f5f9;
+            color: #0f172a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .deliverable-card h4 {
+            font-size: 1rem;
+            margin: 0 0 0.8rem;
+            color: #74a404;
+            font-weight: 700;
+        }
+
+        .deliverable-card p {
+            color: #475569;
+            line-height: 1.75;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .advisory-section {
+            padding: 5rem 1rem;
+            background: #04111f;
+            color: #f8fafc;
+        }
+
+        .advisory-section .advisory-inner {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .advisory-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0 0 1rem;
+            line-height: 1.05;
+        }
+
+        .advisory-section p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            max-width: 28rem;
+            margin: 0 0 1.75rem;
+            font-size: 1rem;
+        }
+
+        .advisory-section .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+
+        .advisory-section .benefits-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: #f8fafc;
+            font-size: 0.98rem;
+        }
+
+        .advisory-section .benefits-list li::before {
+            content: '✓';
+            display: inline-flex;
+            width: 1.35rem;
+            height: 1.35rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            background: #22c55e;
+            color: #042e14;
+            font-size: 0.85rem;
+            margin-top: 0.15rem;
+        }
+
+        .advisory-section .advisory-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #74a404;
+            color: #ffffff;
+            
+            padding: 0.95rem 1.7rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .advisory-section .advisory-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(163, 241, 47, 0.18);
+        }
+
+        .advisory-section .advisory-image {
+            border-radius: 1.5rem;
+            overflow: hidden;
+            min-height: 420px;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.04), rgba(15, 23, 42, 0.12)), #0f172a;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .advisory-section .advisory-image img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            min-height: 420px;
+        }
+
+        .faq-section {
+            padding: 4rem 1rem 6rem;
+        }
+
+        .faq-section .faq-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .faq-section .faq-title h2 {
+            font-size: 2.4rem;
+            margin: 0 0 0.75rem;
+            color: #0f172a;
+            font-weight: 800;
+        }
+
+        .faq-section .faq-title p {
+            color: #64748b;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .faq-accordion {
+            display: grid;
+            gap: 1rem;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #0f172a;
+            list-style: none;
+            outline: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            float: right;
+            font-size: 1.2rem;
+            color: #74a404;
+        }
+
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+
+        .faq-item p {
+            margin: 1rem 0 0;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 1024px) {
+            .advisory-section .advisory-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .advisory-section .advisory-image {
+                min-height: 320px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .process-grid,
+            .deliverables-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 720px) {
+            .process-grid,
+            .deliverables-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .assessment-section .section-top {
+                text-align: left;
+            }
+
+            .assessment-section .section-top .phase-label {
+                margin-top: 0;
+            }
+        }
+    </style>
 
 
+            <!-- Assessment Process Section Start -->
+    <section class="assessment-section">
+        <div class="container">
+                  <div class="section-top  mb-1 wow fadeInUp" data-wow-delay="0.1s" ">
+                <h6 class="text-primary">Our Services</h6>
 
+            </div>
+            <div class="section-top">
+                <div>
+                    <h2>Digital Maturity Assessment & Advisory</h2>
+                    <p class="mb-4">Understand your organization's current digital capabilities, benchmark against peers, 
+                        and get a clear prioritized roadmap to accelerate your transformation across Africa and beyond.</p>
+                        <h4 class="mb-3">Request Assessment:</h4>
+                           <h4>How it works</h4>
 
+                </div>
         
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="icon-box"><i class="fa fa-chart-bar fa-2x text-white"></i></div>
+                    <div class="phase">01</div>
+                    <h3>Discovery & Audit</h3>
+                    <p>Deep-dive analysis of existing infrastructure, workflows, and stakeholder objectives.</p>
+                </div>
+                <div class="process-card">
+                    <div class="icon-box"><i class="fa fa-compass fa-2x text-white text-white"></i></div>
+                    <div class="phase">02</div>
+                    <h3>Maturity Mapping</h3>
+                    <p>Benchmarking current capabilities against industry leaders and best-in-class standards.</p>
+                </div>
+                <div class="process-card">
+                    <div class="icon-box"><i class="fa fa-map-pin fa-2x text-white"></i></div>
+                    <div class="phase">03</div>
+                    <h3>Strategic Roadmap</h3>
+                    <p>Crafting a multi-year execution plan with prioritized high-impact interventions.</p>
+                </div>
+                              <div class="process-card">
+                    <div class="icon-box"><i class="fa fa-rocket fa-2x text-white"></i></div>
+                    <div class="phase">04</div>
+                    <h3>Deployment Guide</h3>
+                    <p>Detailed technical specifications and governance models for immediate activation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deliverables Section Start -->
+    <section class="deliverables-section">
+        <div class="container">
+            <div class="center-header">
+                <h2>Six Concrete Deliverables</h2>
+                <p>Every engagement concludes with comprehensive outputs your leadership can act on immediately.</p>
+            </div>
+                     <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <div class="icon-box"><i class="fa fa-chart-line fa-lg"></i></div>
+                    <h4>Digital Maturity Scorecard</h4>
+                    <p>Dimension-level scores and overall maturity profile benchmarked against sector and regional peers.</p>
+                </div>
+                <div class="deliverable-card">
+                    <div class="icon-box"><i class="fa fa-balance-scale fa-lg"></i></div>
+                    <h4>Peer Benchmarking Report</h4>
+                    <p>Comparative analysis showing how your organization performs against similar institutions in your sector and region.</p>
+                </div>
+                <div class="deliverable-card">
+                    <div class="icon-box"><i class="fa fa-clipboard-list fa-lg"></i></div>
+                    <h4>Prioritized Gap Analysis</h4>
+                    <p>A ranked list of improvement opportunities mapped to business impact, feasibility, and cost.</p>
+                </div>
+                <div class="deliverable-card">
+                    <div class="icon-box"><i class="fa fa-road fa-lg"></i></div>
+                    <h4>Transformation Roadmap</h4>
+                    <p>A three-year phased roadmap with investment estimates, expected outcomes, and KPIs for every stage.</p>
+                </div>
+                <div class="deliverable-card">
+                    <div class="icon-box"><i class="fa fa-bullseye fa-lg"></i></div>
+                    <h4>Executive Presentation</h4>
+                    <p>A board-ready presentation and facilitated leadership debrief session — included in every engagement.</p>
+                </div>
+                <div class="deliverable-card">
+                    <div class="icon-box"><i class="fa fa-sync fa-lg"></i></div>
+                    <h4>Re-assessment & Execution Support</h4>
+                    <p>Optional support for roadmap execution, change management, and periodic re-assessment to track progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Section Start -->
+    <!-- <section class="advisory-section">
+        <div class="container">
+            <div class="advisory-inner">
+                <div>
+                    <h2 class="text-white">Continuous Advisory for Ongoing Excellence</h2>
+                    <p>The assessment is only the beginning. Our advisory partners provide board-level oversight and technical leadership to ensure your roadmap becomes reality.</p>
+                    <ul class="benefits-list">
+                        <li>Quarterly Strategic Reviews</li>
+                        <li>Vendor Selection & Management</li>
+                        <li>CMO/CTO Fractional Support</li>
+                    </ul>
+                    <a class="advisory-button" href="contact.html">Schedule Advisory Call</a>
+                </div>
+                <div class="advisory-image">
+                    <img src="img/advisory.jpg" alt="Advisory discussion illustration">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- FAQ Section Start -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common inquiries about our assessment framework.</p>
+            </div>
+            <div class="faq-accordion">
+                    <details class="faq-item">
+                    <summary>Who is this service for?</summary>
+                    <p>Our Digital Maturity Assessment is designed for government institutions, public agencies, NGOs, and private sector organizations across Africa that are planning or currently executing a digital transformation journey and need an objective, evidence-based baseline to guide their decisions.</p>
+                </details>
+                  <details class="faq-item">
+                    <summary>How long does an assessment take?</summary>
+                    <p>A standard end-to-end engagement runs 6–8 weeks from kick-off to final roadmap delivery. The timeline varies based on organization size, number of departments included, and data availability.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who should be involved from our organization?</summary>
+                    <p>We typically engage a core team of 4–6 people covering IT, operations, HR, and a senior executive sponsor. Broader staff participation happens through surveys and focus groups during the assessment phase.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is the framework adapted for the African context?</summary>
+                    <p>Yes. While our core model follows international best practice, the scoring benchmarks, sector comparisons, and roadmap recommendations are calibrated specifically for the East and Central African operating environment — accounting for infrastructure realities, regulatory context, and local capacity.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can we re-assess after implementing the roadmap?</summary>
+                    <p>Absolutely. Many clients run a re-assessment every 12–18 months to track progress, update priorities, and refresh the roadmap in line with new organizational goals and market conditions.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Does NoN support implementation after the assessment</summary>
+                    <p>Yes. We offer optional execution support packages covering project management, vendor selection, change management, and technology implementation — so the roadmap doesn't just sit on a shelf..</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Start -->
 <div class="container-fluid  text-body footer  pt-5 wow fadeIn" data-wow-delay="0.1s" >
